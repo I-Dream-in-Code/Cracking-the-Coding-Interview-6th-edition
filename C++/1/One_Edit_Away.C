@@ -10,7 +10,7 @@ pale.bale   -> true
 pale.bake   -> false
 
 
-*.
+*/
 
 
 
