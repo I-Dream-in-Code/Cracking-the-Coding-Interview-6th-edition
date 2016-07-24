@@ -4,29 +4,22 @@ cannot use additional data structures?
 */
 
 #include <iostream>
-#include <vector>
+#include <string>
 using namespace std;
 
-typedef std::unordered_map<char,int> myMap;
+
 
 bool unique_char(string S){
 
-   	{
-		if (str.length() > 128)
+   	
+		
+		for (int i = 0; i < S.length(); i++)
 		{
-			return false;
-		}
-		vector<bool> char_set(128);
-		for (int i = 0; i < str.length(); i++)
-		{
-			int val = str[i];
-			if (char_set[val])
-			{
-				return false;
-			}
-			char_set[val] = true;
-		}
-		return true;
+			if(S.find(S[i])<i){
+                return false;
+            }
+        }
+            return true;
 	}
 
 int main(){
