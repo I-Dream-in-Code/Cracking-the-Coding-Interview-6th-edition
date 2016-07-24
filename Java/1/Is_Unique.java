@@ -5,8 +5,6 @@ cannot use additional data structures?
 
 package Is_Unique;
 
-
-
 public class Is_Unique {
    public static boolean is_unique(String S){
         
