@@ -9,27 +9,25 @@ Input:
 Output:
  "Mr%20John%20Smith"
 
-*/
+ */
 package urlify;
-
 
 public class Urlify {
 
-public static String urlify(String S, int N){
-    String result ="";
-    for(int i=0;i<N;i++){
-        if(S.substring(i,i+1).equals(" ")){
-            result = result +"%20";
+    public static String urlify(String S, int N) {
+        String result = "";
+        for (int i = 0; i < N; i++) {
+            if (S.substring(i, i + 1).equals(" ")) {
+                result = result + "%20";
+            } else {
+                result = result + S.charAt(i);
+            }
         }
-        else{
-            result = result + S.charAt(i);
-        }
+        return result;
     }
-    return result;
-}
 
     public static void main(String[] args) {
         System.out.println(urlify("Mike harris", 11));
     }
-    
+
 }

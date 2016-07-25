@@ -9,7 +9,7 @@ Input:
 Output:
  True (permutations: "taco cat". "atco cta". etc.)
 
-*/
+ */
 package palindrome.permutation;
 
 import java.util.HashMap;
@@ -20,31 +20,31 @@ import java.util.HashMap;
  */
 public class PalindromePermutation {
 
-    public static boolean palindrome_Permutation(String S){
-        HashMap<Character,Integer> myMap = new HashMap<Character,Integer>();
-        for(int i=0;i<S.length();i++){
-            if(!myMap.containsKey(S.charAt(i))){
+    public static boolean palindrome_Permutation(String S) {
+        HashMap<Character, Integer> myMap = new HashMap<Character, Integer>();
+        for (int i = 0; i < S.length(); i++) {
+            if (!myMap.containsKey(S.charAt(i))) {
                 myMap.put(S.charAt(i), 1);
-            }
-            else{
-                myMap.put(S.charAt(i), myMap.get(S.charAt(i))+1);
+            } else {
+                myMap.put(S.charAt(i), myMap.get(S.charAt(i)) + 1);
             }
         }
-        boolean oddFlag=false;
-        for(Integer i: myMap.values()){
-            if(i%2==1){
-                if(oddFlag){
+        boolean oddFlag = false;
+        for (Integer i : myMap.values()) {
+            if (i % 2 == 1) {
+                if (oddFlag) {
                     return false;
                 }
-                oddFlag=true;
+                oddFlag = true;
             }
         }
         return true;
     }
+
     public static void main(String[] args) {
         System.out.println(palindrome_Permutation("civic"));
         System.out.println(palindrome_Permutation("civil"));
-        
+
     }
-    
+
 }
