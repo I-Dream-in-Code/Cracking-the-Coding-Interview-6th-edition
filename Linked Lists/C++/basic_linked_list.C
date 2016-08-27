@@ -3,13 +3,13 @@
 
 
 Node::Node() {
-    Node *n=new Node;
-    data= nullptr;
 
+    data= 0;
     next = nullptr;
 
 }
 Node::Node(int d) {
+
     data = d;
     next=nullptr;
 }
