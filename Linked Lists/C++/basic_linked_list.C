@@ -3,6 +3,8 @@
 
 
 Node::Node() {
+    Node *n=new Node;
+    data= nullptr;
 
     next = nullptr;
 
