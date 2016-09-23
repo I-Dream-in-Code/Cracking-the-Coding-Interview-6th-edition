@@ -12,7 +12,8 @@ public:
     void set_data(int d);
     void set_next(Node* n);
     void append_to_tail(int d);
-    Node* delete_node(int d);
+    void delete_node(int d);
+
 
 
 
