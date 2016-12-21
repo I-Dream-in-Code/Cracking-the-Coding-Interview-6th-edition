@@ -4,7 +4,7 @@ Check Permutation: Given two strings, write a method to decide if one is a permu
 other.
 
  */
-package check_permutation;
+
 
 import java.lang.reflect.Array;
 import java.util.Arrays;

@@ -10,7 +10,7 @@ Output:
  "Mr%20John%20Smith"
 
  */
-package urlify;
+
 
 public class Urlify {
 

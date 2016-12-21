@@ -6,7 +6,7 @@ of repeated characters. For example, the string aabcccccaaa would become a2b1c5a
 the original string. You can assume the string has only uppercase and lowercase letters (a - z).
 
  */
-package string.compression;
+
 
 /**
  *

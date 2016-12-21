@@ -7,7 +7,7 @@ Rotate Matrix: Given an image represented by an NxN matrix, where each pixel in 
 
 
 */
-package rotate_matrix;
+
 
 import java.util.Scanner;
 

@@ -10,7 +10,7 @@ Output:
  True (permutations: "taco cat". "atco cta". etc.)
 
  */
-package palindrome.permutation;
+
 
 import java.util.HashMap;
 

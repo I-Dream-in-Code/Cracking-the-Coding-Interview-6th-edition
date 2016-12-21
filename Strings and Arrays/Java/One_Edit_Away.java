@@ -10,7 +10,7 @@ pale.bale   -> true
 pale.bake   -> false
 
  */
-package one_edit_away;
+
 
 /**
  *
